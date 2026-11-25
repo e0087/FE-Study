@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'fe-study-shell-';
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v3';
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const APP_FILES = [
   './',
@@ -11,6 +11,12 @@ const APP_FILES = [
   './src/questions.js',
   './src/backup.js',
   './data/questions.sample.json',
+  './data/public/2026-r08-fe-a.json',
+  './data/public/2026-r08-fe-a/q06-circuit.png',
+  './data/public/2026-r08-fe-a/q06-choice-a.png',
+  './data/public/2026-r08-fe-a/q06-choice-b.png',
+  './data/public/2026-r08-fe-a/q06-choice-c.png',
+  './data/public/2026-r08-fe-a/q06-choice-d.png',
   './icons/icon.svg',
   './icons/icon-180.png',
   './icons/icon-192.png',

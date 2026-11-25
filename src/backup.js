@@ -34,7 +34,13 @@ export function validateBackup(value){
   for(const b of d.bookmarks)if(!object(b)||typeof b.questionId!=='string')throw new Error('ブックマーク情報の形式が正しくありません。');
   for(const s of d.sessions)if(!object(s)||typeof s.id!=='string'||!Number.isFinite(s.durationSeconds)||s.durationSeconds<0)throw new Error('学習時間情報の形式が正しくありません。');
   for(const q of d.userQuestions){
-    const validBlocks=blocks=>Array.isArray(blocks)&&blocks.length>0&&blocks.every(block=>object(block)&&['text','code'].includes(block.type)&&typeof block.text==='string');
+    const validBlocks=blocks=>Array.isArray(blocks)&&blocks.length>0&&blocks.every(block=>{
+      if(!object(block))return false;
+      if(['text','code'].includes(block.type))return typeof block.text==='string';
+      if(block.type==='image')return typeof block.src==='string'&&block.src.startsWith('data/')&&!block.src.split('/').includes('..')&&(block.alt===undefined||typeof block.alt==='string');
+      if(block.type==='table')return Array.isArray(block.headers)&&block.headers.length>0&&block.headers.every(cell=>typeof cell==='string')&&Array.isArray(block.rows)&&block.rows.every(row=>Array.isArray(row)&&row.length===block.headers.length&&row.every(cell=>typeof cell==='string'));
+      return false;
+    });
     if(!object(q)||typeof q.id!=='string'||!['A','B'].includes(q.subject)||typeof q.field!=='string'||typeof q.topic!=='string'||!['single','multiple'].includes(q.format)||!validBlocks(q.prompt)||!Array.isArray(q.choices)||q.choices.length<2||!q.choices.every(choice=>object(choice)&&typeof choice.id==='string'&&validBlocks(choice.content))||!Array.isArray(q.answer)||!q.answer.length||!q.answer.every(id=>q.choices.some(choice=>choice.id===id))||typeof q.explanation!=='string')throw new Error('ユーザー追加問題の形式が正しくありません。');
   }
   for(const [name,rows,key] of [['reviews',d.reviews,'questionId'],['bookmarks',d.bookmarks,'questionId'],['sessions',d.sessions,'id'],['userQuestions',d.userQuestions,'id']]){const keys=rows.map(row=>row[key]);if(new Set(keys).size!==keys.length)throw new Error(`${name} に重複IDがあります。`);}

@@ -1,0 +1,1636 @@
+{
+  "schemaVersion": 1,
+  "bankId": "ipa-r08-fe-subject-a",
+  "title": "令和8年度 基本情報技術者試験 科目A 公開問題",
+  "questions": [
+    {
+      "id": "ipa-r08-fe-a-01",
+      "subject": "A",
+      "field": "基礎理論",
+      "topic": "状態遷移確率",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "状態遷移確率を表す次の表において，条件を満たすものはどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "入力＼出力",
+            "0",
+            "1"
+          ],
+          "rows": [
+            [
+              "0",
+              "a",
+              "b"
+            ],
+            [
+              "1",
+              "c",
+              "d"
+            ]
+          ],
+          "caption": "状態遷移確率"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "a+b+c+d=1"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "a+b=1，c+d=1"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "a+c=1，b+d=1"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "a+d=1，b+c=1"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "各入力状態を条件として、遷移先の確率の合計はそれぞれ1になります。したがって行ごとに a+b=1、c+d=1 です。",
+      "choiceExplanations": {
+        "a": "全確率の和ではなく入力ごとの条件付き確率の和を確認します。",
+        "b": "入力0と入力1のそれぞれについて、出力先の確率の和が1です。",
+        "c": "出力別の列和が1になる条件ではありません。",
+        "d": "対角要素と非対角要素の和を制約するものではありません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問1／「解答例」問1",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、項目・数値を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "基礎理論"
+      ],
+      "extensions": {
+        "sourceQuestion": 1
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-02",
+      "subject": "A",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "クイックソート",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "クイックソートの説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "整列済み部分列を順に拡張し、次の要素を適切な位置に挿入する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "未整列部分から最小値を選び、先頭要素と交換する操作を繰り返す。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "基準値より小さい要素と大きい要素に分割し、それぞれを再帰的に整列する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "隣接する要素を比較して、順序が逆なら交換する操作を繰り返す。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "基準値（ピボット）を選び、要素を大小の部分に分割してから各部分を再帰的に整列します。",
+      "choiceExplanations": {
+        "a": "挿入ソートの説明です。",
+        "b": "選択ソートの説明です。",
+        "c": "クイックソートの説明です。",
+        "d": "バブルソートの説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問2／「解答例」問2",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 2
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-03",
+      "subject": "A",
+      "field": "コンピュータ構成要素",
+      "topic": "GPU",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "GPUの特徴として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "暗号鍵を安全に管理するための隔離実行環境を提供する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "多数の演算器を用いた並列処理により、3Dグラフィックスなどを高速に処理する。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "論理回路を後から再構成し、用途に応じた専用回路として動作する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "量子ビットを用いて特定の計算を行う。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "GPUは多数の演算器を並列に動作させ、画像処理や数値計算などを高速化します。",
+      "choiceExplanations": {
+        "a": "TEEなどのセキュリティ機能の説明です。",
+        "b": "GPUの並列演算の特徴です。",
+        "c": "FPGAの説明です。",
+        "d": "量子コンピュータの説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問3／「解答例」問3",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "コンピュータ構成要素"
+      ],
+      "extensions": {
+        "sourceQuestion": 3
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-04",
+      "subject": "A",
+      "field": "システム構成要素",
+      "topic": "PaaS",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "PaaSの説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "利用者がハードウェアとOSを用意し、アプリケーションを運用する形態である。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "アプリケーションの開発・実行に必要なOSやミドルウェアなどの基盤を提供する形態である。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "利用者に完成したアプリケーションをネットワーク経由で提供する形態である。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "仮想化されたサーバやストレージなどの計算資源を提供する形態である。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "PaaSはアプリケーションの開発・実行環境となるプラットフォームをサービスとして提供します。",
+      "choiceExplanations": {
+        "a": "利用者が基盤を用意するオンプレミスに近い形態です。",
+        "b": "PaaSの説明です。",
+        "c": "SaaSの説明です。",
+        "d": "IaaSの説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問4／「解答例」問4",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "システム構成要素"
+      ],
+      "extensions": {
+        "sourceQuestion": 4
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-05",
+      "subject": "A",
+      "field": "システム構成要素",
+      "topic": "仮想記憶",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "仮想記憶方式で，多重度を高くした結果，ページインとページアウトが頻繁に発生して処理速度が著しく低下する現象はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "スラッシング"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "フラグメンテーション"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "オーバレイ"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "スプーリング"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "主記憶の不足によりページ入替えが頻発し、実行よりページングに時間を費やす現象をスラッシングといいます。",
+      "choiceExplanations": {
+        "a": "ページングの過剰な発生による性能低下です。",
+        "b": "記憶領域の断片化です。",
+        "c": "プログラムを分割して必要部分を読み込む方法です。",
+        "d": "入出力データを一時的に蓄積する処理です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問5／「解答例」問5",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "システム構成要素"
+      ],
+      "extensions": {
+        "sourceQuestion": 5
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-06",
+      "subject": "A",
+      "field": "ハードウェア",
+      "topic": "論理回路とタイミングチャート",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "図の回路の A 及び B に信号を入力したときに，Y に出力される信号のタイミングチャートとして，適切なものはどれか。"
+        },
+        {
+          "type": "image",
+          "src": "data/public/2026-r08-fe-a/q06-circuit.png",
+          "alt": "NANDゲートで構成された論理回路"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "image",
+              "src": "data/public/2026-r08-fe-a/q06-choice-a.png",
+              "alt": "Aのタイミングチャート"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "image",
+              "src": "data/public/2026-r08-fe-a/q06-choice-b.png",
+              "alt": "Bのタイミングチャート"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "image",
+              "src": "data/public/2026-r08-fe-a/q06-choice-c.png",
+              "alt": "Cのタイミングチャート"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "image",
+              "src": "data/public/2026-r08-fe-a/q06-choice-d.png",
+              "alt": "Dのタイミングチャート"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "各入力を同じ信号に接続したNANDゲートはNOTとして働きます。回路全体を整理すると Y=¬(A∨B) となり、AとBがともに0の期間だけYが1になります。",
+      "choiceExplanations": {
+        "a": "Yの波形が論理式と一致しません。",
+        "b": "AとBがともに0の区間だけYが1となる波形です。",
+        "c": "Yの波形が論理式と一致しません。",
+        "d": "Yの波形が論理式と一致しません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問6／「解答例」問6",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 段組みを再構成し、回路図とタイミングチャートを原資料から切り出して再配置。図中の内容は変更なし。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "ハードウェア"
+      ],
+      "extensions": {
+        "sourceQuestion": 6
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-07",
+      "subject": "A",
+      "field": "データベース",
+      "topic": "SQLと主キー",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "商品表を作成し，データを格納した。主キー制約に違反するSQL文はどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "商品コード",
+            "商品名",
+            "仕入先コード",
+            "仕入単価",
+            "在庫数"
+          ],
+          "rows": [
+            [
+              "A111",
+              "テレビ",
+              "S001",
+              "75,000",
+              "0"
+            ],
+            [
+              "A222",
+              "デジタルカメラ",
+              "S002",
+              "50,000",
+              "50"
+            ],
+            [
+              "A333",
+              "DVDプレーヤ",
+              "NULL",
+              "NULL",
+              "NULL"
+            ],
+            [
+              "A444",
+              "洗濯機",
+              "S004",
+              "45,000",
+              "20"
+            ]
+          ]
+        },
+        {
+          "type": "code",
+          "text": "CREATE TABLE 商品 (商品コード CHAR(4) PRIMARY KEY, 商品名 VARCHAR(21), 仕入先コード CHAR(4), 仕入単価 INT, 在庫数 INT)"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "DELETE FROM 商品 WHERE 仕入先コード IS NULL"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "INSERT INTO 商品 VALUES ('A555', '空気清浄機', 'S005', 60000, 50)"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "UPDATE 商品 SET 商品コード = 'A666' WHERE 商品コード = 'A444'"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "UPDATE 商品 SET 商品コード = 'A777' WHERE 在庫数 >= 20"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "在庫数が20以上の行は複数あります。その全行の主キーを同じ A777 に更新するため、主キー値が重複します。",
+      "choiceExplanations": {
+        "a": "該当行を削除する文で、主キー制約には違反しません。",
+        "b": "既存と異なる主キー値を追加します。",
+        "c": "A444を未使用のA666に変更します。",
+        "d": "複数行が同じ主キー値になり、主キーの一意性に違反します。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問7／「解答例」問7",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、項目・数値を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "データベース"
+      ],
+      "extensions": {
+        "sourceQuestion": 7
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-08",
+      "subject": "A",
+      "field": "ネットワーク",
+      "topic": "無線LANのアクセス制御",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "無線LANで，同じ周波数を使用する端末間のデータ衝突を避ける方式はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "CSMA/CA"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "CSMA/CD"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "トークンパッシング"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "ポーリング"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "無線LANでは送信中の衝突検出が難しいため、送信前の待ち時間などで衝突を回避するCSMA/CAを用います。",
+      "choiceExplanations": {
+        "a": "無線LANで用いる衝突回避方式です。",
+        "b": "有線Ethernetで用いられた衝突検出方式です。",
+        "c": "トークンを保持する端末が送信する方式です。",
+        "d": "制御側が順に送信権を与える方式です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問8／「解答例」問8",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "ネットワーク"
+      ],
+      "extensions": {
+        "sourceQuestion": 8
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-09",
+      "subject": "A",
+      "field": "セキュリティ",
+      "topic": "多要素認証",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "二要素認証の組合せとして，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "パスワードと秘密の質問"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "ICカードとワンタイムパスワード"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "パスワードと静脈パターン"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "指紋と顔認証"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "パスワードは知識要素、静脈パターンは生体要素であり、異なる認証要素を組み合わせています。",
+      "choiceExplanations": {
+        "a": "どちらも知識要素です。",
+        "b": "所持要素同士の組合せです。",
+        "c": "知識要素と生体要素の組合せです。",
+        "d": "どちらも生体要素です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問9／「解答例」問9",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 9
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-10",
+      "subject": "A",
+      "field": "セキュリティ",
+      "topic": "CSIRT",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "CSIRTの説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "システムの性能を監視し、資源配分を最適化する組織"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "ソフトウェア開発プロジェクトの進捗を管理する組織"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "セキュリティインシデントの発生時に対応する組織"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "情報システムの監査を独立して実施する組織"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "CSIRTはセキュリティインシデントの検知、分析、対応、再発防止などを担います。",
+      "choiceExplanations": {
+        "a": "性能管理やキャパシティ管理に関する役割です。",
+        "b": "プロジェクト管理の役割です。",
+        "c": "CSIRTの役割です。",
+        "d": "システム監査組織の役割です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問10／「解答例」問10",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 10
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-11",
+      "subject": "A",
+      "field": "ソフトウェア開発管理技術",
+      "topic": "コーディング規約",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "プログラムの記述のばらつきを抑え，保守性を高める方法として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "コーディング規約を定め、開発者に教育する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "開発者ごとに異なる記述方式を認める。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "設計書を作成せず、コードだけを成果物とする。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "テストを省略し、実装を優先する。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "命名や書式などの共通規約を定め、開発者が理解して遵守することで、記述の一貫性と保守性が高まります。",
+      "choiceExplanations": {
+        "a": "共通ルールと教育によりばらつきを抑えます。",
+        "b": "ばらつきを増やし、保守性を下げます。",
+        "c": "設計情報が不足し保守しにくくなります。",
+        "d": "品質確認を弱めるため適切ではありません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問11／「解答例」問11",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "ソフトウェア開発管理技術"
+      ],
+      "extensions": {
+        "sourceQuestion": 11
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-12",
+      "subject": "A",
+      "field": "プロジェクトマネジメント",
+      "topic": "バーンダウンチャート",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "バーンダウンチャートの説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "累積コストを横軸の時間に対して表す。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "作業項目ごとの担当者と責任範囲を表す。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "残作業量の推移を時間に対して表し、完了に向けて減少する様子を把握する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "成果物の品質特性を階層的に分解する。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "バーンダウンチャートは、時間の経過に伴う残作業量を可視化して進捗を把握します。",
+      "choiceExplanations": {
+        "a": "コスト推移のグラフです。",
+        "b": "責任分担表などの説明です。",
+        "c": "バーンダウンチャートの説明です。",
+        "d": "品質モデルの構造に関する説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問12／「解答例」問12",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "プロジェクトマネジメント"
+      ],
+      "extensions": {
+        "sourceQuestion": 12
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-13",
+      "subject": "A",
+      "field": "プロジェクトマネジメント",
+      "topic": "クリティカルパス短縮",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "クリティカルパス上の作業期間を短縮するため，追加の要員や資源を投入する手法はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "クラッシング"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "ファストトラッキング"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "リスク移転"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "ローリングウェーブ計画"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "追加資源を投入してクリティカルパス上の作業期間を短縮する手法はクラッシングです。",
+      "choiceExplanations": {
+        "a": "資源追加による期間短縮です。",
+        "b": "作業を並行実施して短縮する手法です。",
+        "c": "リスク対応を第三者へ移すことです。",
+        "d": "段階的に詳細化する計画手法です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問13／「解答例」問13",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "プロジェクトマネジメント"
+      ],
+      "extensions": {
+        "sourceQuestion": 13
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-14",
+      "subject": "A",
+      "field": "サービスマネジメント",
+      "topic": "SLAと可用性",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "年間のサービス提供時間が5,000時間で，停止時間が100時間から30分に改善した。可用性の改善幅は何ポイントか。小数第3位を切り捨てる。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.01"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.19"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "1.40"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "1.99"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "改善前は (5000−100)/5000=98%。改善後は (5000−0.5)/5000=99.99%。差は1.99ポイントです。",
+      "choiceExplanations": {
+        "a": "改善幅の計算値と一致しません。",
+        "b": "改善幅の計算値と一致しません。",
+        "c": "改善幅の計算値と一致しません。",
+        "d": "99.99−98=1.99ポイントです。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問14／「解答例」問14",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "サービスマネジメント"
+      ],
+      "extensions": {
+        "sourceQuestion": 14
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-15",
+      "subject": "A",
+      "field": "システム監査",
+      "topic": "監査計画",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "システム監査人の行為として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "監査対象部門の責任者の指示どおりに、監査手続を変更する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "監査対象システムの開発に参加し、その後の監査を行う。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "経営者のニーズを踏まえ、監査目的と監査範囲を独立して決定する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "監査対象部門に代わって、指摘事項の改善作業を実施する。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "監査人は独立性を保ち、経営上の必要性などを踏まえて監査目的と範囲を定めます。",
+      "choiceExplanations": {
+        "a": "監査の独立性が損なわれるおそれがあります。",
+        "b": "自己監査となり独立性が損なわれます。",
+        "c": "独立した監査計画の策定として適切です。",
+        "d": "改善の実施は監査対象側の責任です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問15／「解答例」問15",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "システム監査"
+      ],
+      "extensions": {
+        "sourceQuestion": 15
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-16",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "オムニチャネル",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "オムニチャネルの事例として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "店舗・Web・アプリなど複数の接点で顧客情報や在庫情報を連携し、一貫した購買体験を提供する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "各店舗が独立した顧客台帳と在庫台帳を管理する。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "Web販売を停止し、店舗販売に一本化する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "顧客接点ごとに異なる会員制度を設け、情報を共有しない。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "複数チャネルを連携させ、顧客が接点を移動しても一貫した体験を提供する考え方です。",
+      "choiceExplanations": {
+        "a": "顧客接点を横断して情報を連携する事例です。",
+        "b": "チャネル間で情報が分断されています。",
+        "c": "複数チャネルを統合する考え方ではありません。",
+        "d": "顧客情報を連携していません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問16／「解答例」問16",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 16
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-17",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "顧客維持率",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "次の表は，サービスA〜Dの前年顧客数，新規顧客数，期末顧客数である。顧客維持率が最も高いサービスはどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "サービス",
+            "前年顧客数（人）",
+            "新規顧客数（人）",
+            "期末顧客数（人）"
+          ],
+          "rows": [
+            [
+              "A",
+              "1,000",
+              "500",
+              "800"
+            ],
+            [
+              "B",
+              "1,000",
+              "200",
+              "800"
+            ],
+            [
+              "C",
+              "1,500",
+              "500",
+              "1,100"
+            ],
+            [
+              "D",
+              "1,500",
+              "1,000",
+              "1,800"
+            ]
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "サービスA"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "サービスB"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "サービスC"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "サービスD"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "顧客維持率は (期末顧客数−新規顧客数)÷前年顧客数。Aは30%、Bは60%、Cは40%、Dは約53.3%なのでBが最も高いです。",
+      "choiceExplanations": {
+        "a": "Aは (800−500)/1000=30% です。",
+        "b": "Bは (800−200)/1000=60% で最大です。",
+        "c": "Cは (1100−500)/1500=40% です。",
+        "d": "Dは (1800−1000)/1500≒53.3% です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問17／「解答例」問17",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、項目・数値を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 17
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-18",
+      "subject": "A",
+      "field": "基礎理論",
+      "topic": "AIの適用",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "AIの活用例として，最も適切でないものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "PID制御による温度調整"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "画像からの物体認識"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "大量の文章の分類"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "過去データに基づく需要予測"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "PID制御は偏差に基づく古典的なフィードバック制御であり、通常はAIの活用例とは区別されます。",
+      "choiceExplanations": {
+        "a": "PID制御は制御理論に基づく方法です。",
+        "b": "画像認識にAIを利用できます。",
+        "c": "文章分類にAIを利用できます。",
+        "d": "需要予測に機械学習などを利用できます。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問18／「解答例」問18",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "基礎理論"
+      ],
+      "extensions": {
+        "sourceQuestion": 18
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-19",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "ブレーンストーミング",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "ブレーンストーミングの進め方として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "他人の意見を批判せず、自由に多くのアイデアを出す。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "最初に実現可能性を厳密に評価し、非現実的な案を除外する。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "発言は進行役だけに限定する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "一つの案に絞ってから、他の案を考える。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "自由な発想を促すため、批判を保留し、質より量を意識して多くの案を出します。",
+      "choiceExplanations": {
+        "a": "批判を保留してアイデアを広げる原則です。",
+        "b": "評価を後段に分けず、発想を妨げます。",
+        "c": "参加者全員の発想を引き出す手法です。",
+        "d": "初めから案を限定すると発想が広がりません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問19／「解答例」問19",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 19
+      }
+    },
+    {
+      "id": "ipa-r08-fe-a-20",
+      "subject": "A",
+      "field": "法務",
+      "topic": "著作者人格権",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "委託先Bが作成した業務フロー図の著作権が発注元Aに譲渡された。著作者人格権に関する説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "content": [
+            {
+              "type": "text",
+              "text": "著作権が譲渡されたので、AはBの氏名を著作者として表示できない。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "content": [
+            {
+              "type": "text",
+              "text": "Bの同意なく、Bの氏名表示をAの氏名に置き換えることはできない。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "content": [
+            {
+              "type": "text",
+              "text": "著作権の譲渡により、著作者人格権もAに移転する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "content": [
+            {
+              "type": "text",
+              "text": "業務上作成された図には著作者人格権が発生しない。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "著作者人格権は著作者本人に専属し、譲渡できません。氏名表示を変更する場合は著作者人格権への配慮が必要です。",
+      "choiceExplanations": {
+        "a": "著作権譲渡後も著作者人格権と氏名表示の問題は残ります。",
+        "b": "氏名表示権への配慮が必要です。",
+        "c": "著作者人格権は譲渡できません。",
+        "d": "業務上の著作物にも著作者人格権が成立し得ます。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問20／「解答例」問20",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "法務"
+      ],
+      "extensions": {
+        "sourceQuestion": 20
+      }
+    }
+  ]
+}
