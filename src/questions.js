@@ -1,0 +1,1 @@
+export async function loadQuestions(){const r=await fetch(new URL('../data/questions.sample.json',import.meta.url));if(!r.ok)throw new Error('問題データを読み込めませんでした。');const d=await r.json();if(d.schemaVersion!==1||!Array.isArray(d.questions))throw new Error('問題データの形式が正しくありません。');return d.questions}
