@@ -1,2 +1,2 @@
-const banks=['../data/questions.sample.json','../data/public/2026-r08-fe-a.json'];
+const banks=['../data/public/2026-r08-fe-a.json','../data/public/2026-r08-fe-b.json'];
 export async function loadQuestions(){const datasets=await Promise.all(banks.map(async path=>{const r=await fetch(new URL(path,import.meta.url));if(!r.ok)throw new Error('問題データを読み込めませんでした。');const d=await r.json();if(d.schemaVersion!==1||!Array.isArray(d.questions))throw new Error('問題データの形式が正しくありません。');return d.questions}));return datasets.flat()}

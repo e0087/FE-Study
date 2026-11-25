@@ -1,0 +1,720 @@
+{
+  "schemaVersion": 1,
+  "bankId": "ipa-r08-fe-subject-b",
+  "title": "令和8年度 基本情報技術者試験 科目B 公開問題",
+  "questions": [
+    {
+      "id": "ipa-r08-fe-b-01",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "配列の要素移動",
+      "difficulty": 1,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "配列 data の末尾の値を先頭へ移し、ほかの値を一つずつ後方へずらす。空欄に入る繰返し範囲はどれか。"
+        },
+        {
+          "type": "code",
+          "text": "整数型の配列: data ← {1, 2, 3, 4, 5, 6, 7, 8, 9}\n整数型: top, i\n整数型: len ← dataの要素数\ntop ← data[len]\nfor (i を □ )\n    data[i] ← data[i － 1]\nendfor\ndata[1] ← top"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 から len － 1 まで 1 ずつ増やす"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 から len まで 1 ずつ増やす"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "len － 1 から 2 まで 1 ずつ減らす"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "len から 2 まで 1 ずつ減らす"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "元の末尾値を退避した後、後ろの要素から順に一つ前の値をコピーします。lenから2へ減らすと、未処理の値を上書きせずに配列を右へずらせます。",
+      "choiceExplanations": {
+        "a": "lenを処理対象に含めず、末尾が元のままです。",
+        "b": "順方向に更新すると、先に上書きした値が後続の要素へ連鎖してしまいます。",
+        "c": "末尾の要素を更新しない範囲です。",
+        "d": "lenから2まで逆順に処理する範囲です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問1／「解答例」問1",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 1
+      }
+    },
+    {
+      "id": "ipa-r08-fe-b-02",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "8ビットの補数",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "8ビット値 x に加えると、8ビット加算で 00000000 になる値を返す関数を作る。以下の後半で1を加える前の y の式はどれか。"
+        },
+        {
+          "type": "code",
+          "text": "○8ビット型: complement(8ビット型: x)\n    8ビット型: y\n    y ← □\n    y ← y ＋ 00000001\n    return y"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ∧ 01111111"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ∧ 11111111"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ∨ 01111111"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ∨ 11111111"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ▽ 01111111"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "x ▽ 11111111"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "f"
+      ],
+      "explanation": "2の補数はビット反転して1を加えた値です。8ビットすべてを1とする値との排他的論理和は、xの各ビットを反転します。",
+      "choiceExplanations": {
+        "a": "最上位以外の特定ビットだけを落とします。",
+        "b": "xをそのまま返します。",
+        "c": "複数のビットを強制的に1にします。",
+        "d": "すべてのビットを1にします。",
+        "e": "下位7ビットだけが反転します。",
+        "f": "8ビット全体を反転し、後段の加算で2の補数になります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問2／「解答例」問2",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 2
+      }
+    },
+    {
+      "id": "ipa-r08-fe-b-03",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "再帰と動的計画法",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "func1 と同じ値を返す func2 を作る。配列には直近の値を保持し、反復ごとに先頭側へずらす。空欄に入る式はどれか。"
+        },
+        {
+          "type": "code",
+          "text": "○整数型: func1(整数型: n)\n    if (n が 2 以下)\n        return 1\n    endif\n    return 2 × func1(n － 2) ＋ func1(n － 1)\n\n○整数型: func2(整数型: n)\n    整数型の配列: data ← {1, 1, 1}\n    整数型: i\n    for (i を 3 から n まで 1 ずつ増やす)\n        data[1] ← data[2]\n        data[2] ← data[3]\n        data[3] ← □\n    endfor\n    return data[3]"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 × data[1] ＋ data[2]"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 × data[2] ＋ data[1]"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 × data[i － 1] ＋ data[i － 2]"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "2 × data[i － 2] ＋ data[i － 1]"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "data[3] ＋ 2 × data[1] ＋ data[2]"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "data[3] ＋ 2 × data[2] ＋ data[1]"
+            }
+          ]
+        },
+        {
+          "id": "g",
+          "label": "キ",
+          "content": [
+            {
+              "type": "text",
+              "text": "data[3] ＋ 2 × data[i － 1] ＋ data[i － 2]"
+            }
+          ]
+        },
+        {
+          "id": "h",
+          "label": "ク",
+          "content": [
+            {
+              "type": "text",
+              "text": "data[3] ＋ 2 × data[i － 2] ＋ data[i － 1]"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "data[1]とdata[2]に前の二つの値を保ちます。漸化式の係数に従い、ひとつ前の値を2倍し、ふたつ前の値を加えます。更新後の配列では data[1] が f(i−2)、data[2] が f(i−1) に当たります。",
+      "choiceExplanations": {
+        "a": "更新後の配列で古い値を参照する順序が逆です。",
+        "b": "前二つの値に掛ける係数が逆です。",
+        "c": "iは配列の添字ではなく反復番号で、配列範囲を外れます。",
+        "d": "添字の対応と係数が漸化式と逆です。",
+        "e": "現在値を加えてしまい、漸化式と異なります。",
+        "f": "係数の対象が逆で、さらに現在値を余分に加えます。",
+        "g": "配列添字が範囲外となり、現在値も加算しています。",
+        "h": "添字と係数が逆で、現在値も加算しています。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問3／「解答例」問3",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 3
+      }
+    },
+    {
+      "id": "ipa-r08-fe-b-04",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "単方向リスト",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "配列 dataList と pointerList で単方向リストを表す。先頭は要素番号1で、pointerList[p] は次の要素番号を示し、末尾のポインタは未定義である。リストの値を順番に取り出すプログラムの空欄 a、b の組合せはどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "要素番号",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "rows": [
+            [
+              "dataList",
+              "10",
+              "30",
+              "20",
+              "40",
+              "未定義"
+            ],
+            [
+              "pointerList",
+              "3",
+              "4",
+              "2",
+              "未定義",
+              "未定義"
+            ]
+          ],
+          "caption": "リスト配列の内容"
+        },
+        {
+          "type": "code",
+          "text": "p ← 1\nfor (i を 1 から dataListの要素数 まで 1 ずつ増やす)\n    linearListの末尾に dataList[p]を追加\n    if (a が未定義)\n        繰返し処理を終了\n    endif\n    p ← b\nendfor"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=dataList[p]、b=i"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=dataList[p]、b=pointerList[p]"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=pointerList[p]、b=i"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=pointerList[p]、b=pointerList[p]"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "末尾判定は現在要素の次ポインタが未定義かどうかで行います。未定義でなければ、その次ポインタを p に代入して次の要素へ進みます。",
+      "choiceExplanations": {
+        "a": "要素の値は未定義でないため、末尾を正しく検出できません。",
+        "b": "末尾判定は適切ですが、次の要素番号ではなく値を代入してしまいます。",
+        "c": "ポインタ未定義の判定はできますが、ループ番号で進むと連結順をたどれません。",
+        "d": "ポインタで末尾を判定し、同じポインタで次の要素へ進みます。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問4／「解答例」問4",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、値と条件を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 4
+      }
+    },
+    {
+      "id": "ipa-r08-fe-b-05",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "One-Hotエンコーディング",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "色名配列から重複のない色名一覧を作り、各要素をOne-Hot表現へ変換する。空欄 a、b の組合せはどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "色名",
+            "One-Hot表現"
+          ],
+          "rows": [
+            [
+              "Red",
+              "{1, 0, 0}"
+            ],
+            [
+              "Green",
+              "{0, 1, 0}"
+            ],
+            [
+              "Blue",
+              "{0, 0, 1}"
+            ]
+          ],
+          "caption": "変換例：{Red, Green, Blue, Red} → 各色を3要素のベクトルに変換"
+        },
+        {
+          "type": "code",
+          "text": "/* 色名一覧の作成 */\nfor (i を 1 から colorsの要素数 まで)\n    if (colorVectorのいずれにも colors[i]がない)\n        colorVectorの末尾に a を追加\n    endif\nendfor\n\n/* One-Hot表現への変換 */\nfor (j を 1 から colorsの要素数 まで)\n    tempVector ← {}\n    for (k を 1 から colorVectorの要素数 まで)\n        if (b)\n            tempVectorの末尾に 1 を追加\n        else\n            tempVectorの末尾に 0 を追加\n        endif\n    endfor\n    oneHotVectorの末尾に tempVectorを追加\nendfor"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=colors[i]、b=colorVector[k]がcolorsのいずれかに含まれる"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=colors[i]、b=colors[j] が colorVector[k] と等しい"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=未定義の値、b=colorVector[k]がcolorsのいずれかに含まれる"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=未定義の値、b=colors[j] が colorVector[k] と等しい"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "色名一覧には初めて現れた色名 colors[i] を追加します。j番目の色に対応するベクトルは、k番目の色名と一致した位置だけ1になるので、比較式は colors[j] = colorVector[k] です。",
+      "choiceExplanations": {
+        "a": "条件式の内容が目的に合いません。",
+        "b": "重複しない色名を追加し、対象の色名とベクトル位置を照合します。",
+        "c": "一覧に値を追加せず、色名一覧を構成できません。",
+        "d": "一覧作成も適切な条件式も満たしません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問5／「解答例」問5",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、値と条件を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 5
+      }
+    },
+    {
+      "id": "ipa-r08-fe-b-06",
+      "subject": "B",
+      "field": "情報セキュリティ",
+      "topic": "クラウドサービスのログ管理",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "部署ごとにファイルサーバとクラウドサービスを運用する会社で、営業部員の一般アカウントはYサーバ上の全ファイルを編集できる。情報セキュリティ部門は、ログの取得、対象アカウント名・日本標準時の日時・操作内容の記録、過去1年分の保存、改ざん防止、アクセス管理について共通ルールを定めた。アクセス管理では、ログ閲覧を複数名の運用担当者だけに限定し、エクスポートログも自部署のファイルサーバに保管して運用担当者だけがアクセスできるようにする。また、運用担当者のサービスログインには二要素認証を求める。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "項番",
+            "現在の運用"
+          ],
+          "rows": [
+            [
+              "一",
+              "容量が少なくなると古いログから上書きされる"
+            ],
+            [
+              "二",
+              "運用担当者が退職し、現在は1名だけである"
+            ],
+            [
+              "三",
+              "ログ日時はUTCで記録される"
+            ],
+            [
+              "四",
+              "ログを月末に全件エクスポートし、部署のファイルサーバに保存する"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "このうち、アクセス管理ルールに違反する運用の組合せはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(二)"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(二)，(三)"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(二)，(四)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(三)"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(三)，(四)"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(一)，(四)"
+            }
+          ]
+        },
+        {
+          "id": "g",
+          "label": "キ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(二)，(三)"
+            }
+          ]
+        },
+        {
+          "id": "h",
+          "label": "ク",
+          "content": [
+            {
+              "type": "text",
+              "text": "(二)，(三)，(四)"
+            }
+          ]
+        },
+        {
+          "id": "i",
+          "label": "ケ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(二)，(四)"
+            }
+          ]
+        },
+        {
+          "id": "j",
+          "label": "コ",
+          "content": [
+            {
+              "type": "text",
+              "text": "(三)，(四)"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "i"
+      ],
+      "explanation": "(二)は運用担当者を複数名にする要件に反します。(四)はYサーバ上の全ファイルを営業部員が編集できるため、エクスポートしたログを運用担当者以外も変更・閲覧でき、アクセス制限に反します。(一)は保存期間、(三)は日時記録のルールに関する問題で、アクセス管理ルールではありません。",
+      "choiceExplanations": {
+        "a": "(一)はログ保存期間の要件に関係し、(三)は日時の記録要件です。",
+        "b": "(三)はアクセス管理でなく記録項目の要件です。(四)もアクセス違反に含まれません。",
+        "c": "(一)と(三)はアクセス管理の違反ではありません。",
+        "d": "(一)と(三)は保存期間・記録項目の要件です。",
+        "e": "(一)は保存期間の要件です。",
+        "f": "(一)は保存期間、(四)はサーバ上のアクセス制限の問題です。",
+        "g": "(三)は記録項目の要件です。",
+        "h": "(三)はアクセス管理ではありません。",
+        "i": "運用担当者が1名のみであることと、共有サーバ上のログを限定管理できないことがアクセス管理違反です。",
+        "j": "(三)はアクセス管理の要件に該当しません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和8年度 基本情報技術者試験 科目B 公開問題」問6／「解答例」問6",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "問題文・選択肢をFE Study用に要約・表現変更。プログラム・表・例をアプリ画面向けに再構成。正答はIPA公開解答例に基づき、解説と選択肢解説はFE Study作成。 表はHTML形式で再構成し、値と条件を保持。"
+      },
+      "examYear": "令和8年度",
+      "syllabus": [
+        "情報セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 6
+      }
+    }
+  ]
+}
