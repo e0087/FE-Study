@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'fe-study-shell-';
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const APP_FILES = [
   './',
@@ -12,6 +12,9 @@ const APP_FILES = [
   './src/backup.js',
   './data/public/2026-r08-fe-a.json',
   './data/public/2026-r08-fe-b.json',
+  './data/public/2025-r07-fe-a.json',
+  './data/public/2025-r07-fe-a/q03-tree.png',
+  './data/public/2025-r07-fe-a/q14-network.png',
   './data/public/2026-r08-fe-a/q06-circuit.png',
   './data/public/2026-r08-fe-a/q06-choice-a.png',
   './data/public/2026-r08-fe-a/q06-choice-b.png',

@@ -1,0 +1,1686 @@
+{
+  "schemaVersion": 1,
+  "bankId": "ipa-r07-fe-subject-a",
+  "title": "令和7年度 基本情報技術者試験 科目A 公開問題",
+  "questions": [
+    {
+      "id": "ipa-r07-fe-a-01",
+      "subject": "A",
+      "field": "基礎理論",
+      "topic": "生成AIとファインチューニング",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "大規模言語モデルを用いた自然言語処理において，事前学習済みのモデルに対して行う，ファインチューニングに関する記述として，最も適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "強化学習を行い，最適な結果が得られるようにする。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "事前学習と同じデータを繰り返し用いて学習を行い，モデルの精度を高めるようにする。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "大量のテキストデータを用いて学習を行い，モデルの精度を高めるようにする。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "特定のデータを用いて追加で学習を行い，目的とするタスクに適用できるようにする。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "ファインチューニングは、事前学習済みモデルに特定のタスクや分野に合わせたデータを追加学習させることです。",
+      "choiceExplanations": {
+        "a": "強化学習は報酬を用いて方策などを調整する学習方法で、ファインチューニング一般の説明ではありません。",
+        "b": "事前学習と同じデータを繰り返すことは、特定タスク向けの追加学習を説明していません。",
+        "c": "大量テキストで汎用的な言語能力を獲得するのは、主に事前学習の説明です。",
+        "d": "特定のデータで追加学習し、目的タスクに適応させるのがファインチューニングです。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問1／「解答例」問1",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "基礎理論"
+      ],
+      "extensions": {
+        "sourceQuestion": 1
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-02",
+      "subject": "A",
+      "field": "基礎理論",
+      "topic": "浮動小数点と丸め誤差",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "浮動小数点形式で表現された数値の演算結果における丸め誤差の説明はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "演算結果がコンピュータの扱える最大値を超えることによって生じる誤差である。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "数表現のけた数に限度があるので，最下位けたより小さい部分について四捨五入や切上げ，切捨てを行うことによって生じる誤差である。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "乗除算において，指数部が小さい方の数値の仮数部の下位部分が失われることによって生じる誤差である。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "絶対値がほぼ等しい数値の加減算において，上位の有効数字が失われることによって生じる誤差である。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "浮動小数点では有限の桁数で数を表すため、表せない下位部分を丸めます。そのときに生じる差が丸め誤差です。",
+      "choiceExplanations": {
+        "a": "扱える最大値を超えるとオーバーフローが発生します。丸め誤差とは別の現象です。",
+        "b": "有限の桁数で表現できない端数を丸めることによる誤差です。",
+        "c": "指数部の差により小さい数の仮数部が失われるのは桁落ちではなく、情報落ち（桁落ちとは区別される誤差）の説明です。",
+        "d": "絶対値の近い数値の減算で有効桁が失われる現象は桁落ちです。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問2／「解答例」問2",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "基礎理論"
+      ],
+      "extensions": {
+        "sourceQuestion": 2
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-03",
+      "subject": "A",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "二分探索木",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "図の木構造は 2 分探索木である。a～g の値の大小関係として，適切なものはどれか。ここで，a～gの値は重複しないものとする。"
+        },
+        {
+          "type": "image",
+          "src": "data/public/2025-r07-fe-a/q03-tree.png",
+          "alt": "問3の二分探索木。根a、子b・c、葉d・e・f・g"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "a＜b＜d＜e＜c＜f＜g"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "d＜b＜e＜a＜f＜c＜g"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "d＜e＜f＜g＜b＜c＜a"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "g＜f＜c＜e＜d＜b＜a"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "二分探索木では各ノードについて、左部分木の値はそのノードより小さく、右部分木の値は大きくなります。したがって d＜b＜e＜a＜f＜c＜g です。",
+      "choiceExplanations": {
+        "a": "左側の子bはaより小さい必要がありますが、この並びではb>aです。",
+        "b": "dとeはbの左・右の子、fとgはcの左・右の子なので、木の大小関係と一致します。",
+        "c": "葉の値が全てb、cより小さく、根aが最大という関係になり、右部分木の条件に反します。",
+        "d": "根aより左側にあるb、d、eがaより大きくなり、二分探索木の条件に反します。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問3／「解答例」問3",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "木構造の図を原資料から切り出して再配置。図のノード・接続関係は原資料どおり。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 3
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-04",
+      "subject": "A",
+      "field": "システム構成要素",
+      "topic": "稼働率",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "MTBF は 4,000 時間，MTTR は 1,000 時間の装置がある。今後の 6 年間は，予防保守によってMTBFを前年に比べて毎年100時間ずつ改善し，遠隔保守によってMTTRを前年に比べて毎年 100 時間ずつ改善していく計画である。6 年経過後の稼働率は幾らか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.88"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.90"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.92"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "0.94"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "6年後のMTBFは4,000+6×100=4,600時間、MTTRは1,000−6×100=400時間です。稼働率はMTBF/(MTBF+MTTR)=4,600/5,000=0.92です。",
+      "choiceExplanations": {
+        "a": "MTBFとMTTRを6年分改善した後の比率は0.92であり、0.88にはなりません。",
+        "b": "MTTRの改善を考慮した稼働率の計算結果は0.92です。",
+        "c": "MTBF=4,600、MTTR=400より、4,600÷(4,600+400)=0.92です。",
+        "d": "分母をMTBF+MTTRとした稼働率は0.92であり、0.94ではありません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問4／「解答例」問4",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "システム構成要素"
+      ],
+      "extensions": {
+        "sourceQuestion": 4
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-05",
+      "subject": "A",
+      "field": "ソフトウェア開発管理技術",
+      "topic": "ローコード開発",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "ローコード開発ツールを用いたソフトウェア開発の説明はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "アプリケーションソフトウェアの開発基盤の上で，用意された部品やテンプレートをGUIを用いた操作で組み合わせたり，必要に応じて一部の処理のソースコードを記述したりすることによって，アプリケーションソフトウェアを作成する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "アプリケーションソフトウェアの開発基盤の上で，用意された部品やテンプレートをGUIを用いた操作で組み合わせるだけで，ソースコードを記述せずに，アプリケーションソフトウェアを作成する。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "アプリケーションソフトウェアの定型的な枠組みを参照して，独自の処理のソースコードを記述することによって，アプリケーションソフトウェアを作成する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "利用者がシステムを利用して行う作業を自動化ツールに代行させるために，利用者によるシステムの操作手順をツールに登録する。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "ローコード開発は、GUIによる部品の組合せを中心にしながら、必要に応じてコードも記述する開発方法です。",
+      "choiceExplanations": {
+        "a": "GUIによる開発を中心に、必要な部分だけコードを記述できるローコード開発の説明です。",
+        "b": "コードを一切記述しない開発は、ノーコード開発の説明です。",
+        "c": "既存の枠組みに独自コードを記述する説明で、ローコードの特徴である視覚的な部品構成がありません。",
+        "d": "利用者の操作を記録して自動実行するRPAの説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問5／「解答例」問5",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "ソフトウェア開発管理技術"
+      ],
+      "extensions": {
+        "sourceQuestion": 5
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-06",
+      "subject": "A",
+      "field": "データベース",
+      "topic": "SQLの集合演算",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "“商品”表に対するSQL文と同じ結果が得られるSELECT文はどれか。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "商品ID",
+            "商品名称",
+            "仕入先ID",
+            "単価"
+          ],
+          "rows": [
+            [
+              "S001",
+              "冷蔵庫",
+              "M001",
+              "155,000"
+            ],
+            [
+              "S002",
+              "食器洗い機",
+              "M002",
+              "85,000"
+            ],
+            [
+              "S003",
+              "電子レンジ",
+              "M003",
+              "78,000"
+            ],
+            [
+              "S004",
+              "炊飯器",
+              "M003",
+              "32,000"
+            ],
+            [
+              "S005",
+              "コーヒーメーカー",
+              "M004",
+              "15,000"
+            ],
+            [
+              "S006",
+              "ホットプレート",
+              "M004",
+              "12,000"
+            ]
+          ],
+          "caption": "商品"
+        },
+        {
+          "type": "text",
+          "text": "〔SQL文〕"
+        },
+        {
+          "type": "code",
+          "text": "SELECT * FROM 商品 WHERE 仕入先ID IN ('M002', 'M004')"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002' AND 仕入先ID = 'M004'"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002'\nINTERSECT\nSELECT * FROM 商品 WHERE 仕入先ID = 'M004'"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002' OR 仕入先ID = 'M004'"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "SELECT * FROM 商品 WHERE 仕入先ID BETWEEN 'M002' AND 'M004'"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "IN ('M002','M004') は、仕入先IDがM002またはM004の行を選択します。ORで同じ二条件を結んだSELECT文が同じ結果になります。",
+      "choiceExplanations": {
+        "a": "同じ1つの仕入先IDが同時にM002とM004である行はないため、結果は0件です。",
+        "b": "INTERSECTは両方のSELECT結果に共通する行を求めます。仕入先IDが異なるため共通行はありません。",
+        "c": "ORはM002またはM004の行を選択し、INの条件と同じ結果になります。",
+        "d": "BETWEENは文字列順でM002からM004までの範囲を含み、M003の行も含むため結果が異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問6／「解答例」問6",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "商品表をHTML表として再配置。表題・項目・値は原資料どおり。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "データベース"
+      ],
+      "extensions": {
+        "sourceQuestion": 6
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-07",
+      "subject": "A",
+      "field": "ネットワーク",
+      "topic": "回線利用率",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "1G バイトの動画データを 40M ビット／秒の回線を使用してダウンロードしたところ，5 分掛かった。このときの回線利用率はおよそ何％か。ここで，ダウンロード時には動画データに20％の制御情報が付加されるものとする。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "53"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "67"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "80"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "1Gバイトを8,000Mビットとし、制御情報20%を加えると9,600Mビットです。5分間に送れる量は40×300=12,000Mビットなので、利用率は9,600/12,000=0.8、約80%です。",
+      "choiceExplanations": {
+        "a": "動画データ量に制御情報を加え、回線の5分間の容量で割ると約80%です。",
+        "b": "制御情報を加えたデータ量と回線容量の比は約80%であり、53%ではありません。",
+        "c": "40Mビット/秒×300秒の容量を使って計算すると80%です。",
+        "d": "8,000×1.2=9,600Mビット、回線容量は12,000Mビットなので80%です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問7／「解答例」問7",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "ネットワーク"
+      ],
+      "extensions": {
+        "sourceQuestion": 7
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-08",
+      "subject": "A",
+      "field": "ネットワーク",
+      "topic": "HTTPSとサーバ証明書",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "HTTPとHTTPSを比較した場合において，HTTPSだけがもつ特徴を示したものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "cookieに保存されている情報を用いたセッション管理が可能である。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "IDとパスワードによって利用者の認証を行うことが可能である。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "Web ブラウザでキャッシュさせることによって通信量を減らすことが可能である。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "通信相手先サーバをサーバ証明書によって確認することが可能である。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "HTTPSはTLSを用いて通信を暗号化し、サーバ証明書を検証して通信相手のサーバを確認できます。",
+      "choiceExplanations": {
+        "a": "Cookieによるセッション管理はHTTPでもHTTPSでも利用できます。",
+        "b": "IDとパスワードによる認証はアプリケーション側の機能で、HTTPでも実装できます。",
+        "c": "ブラウザキャッシュはHTTPにもある機能です。",
+        "d": "HTTPSではサーバ証明書を検証し、接続先サーバの真正性を確認できます。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問8／「解答例」問8",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "ネットワーク"
+      ],
+      "extensions": {
+        "sourceQuestion": 8
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-09",
+      "subject": "A",
+      "field": "セキュリティ",
+      "topic": "暗号の危殆化",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "暗号の危殆化に該当するものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "ある CA でデジタル証明書の署名に使っている公開鍵のデジタル証明書の有効期限が切れた。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "ある暗号アルゴリズムの秘密鍵が不正アクセスによって漏えいした。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "あるハッシュ関数においてハッシュ値が同じになるデータの組みを現実的な時間内で発見する方法が見つかった。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "あるランサムウェアの一種で暗号化されたファイルの復号鍵が公開された。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "ハッシュ値が一致する異なるデータを現実的な時間で見つけられると、ハッシュ関数の衝突耐性が損なわれ、暗号技術として危殆化します。",
+      "choiceExplanations": {
+        "a": "証明書の有効期限切れは証明書の更新が必要な状態ですが、暗号アルゴリズム自体の安全性が崩れたことを意味しません。",
+        "b": "秘密鍵の漏えいは鍵の侵害です。暗号方式そのものの解読可能性が示された危殆化とは区別されます。",
+        "c": "実用時間内に衝突を発見できる方法が見つかると、ハッシュ関数の安全性が低下し危殆化に当たります。",
+        "d": "復号鍵の公開は該当ファイルを復旧できる可能性を示しますが、暗号アルゴリズムの危殆化とは限りません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問9／「解答例」問9",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 9
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-10",
+      "subject": "A",
+      "field": "セキュリティ",
+      "topic": "WAF",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "WAFの説明はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "Web サイトに対するアクセス内容を監視し，攻撃とみなされるパターンを検知したときに当該アクセスを遮断する。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "Wi-Fi アライアンスが認定した無線 LAN の暗号化方式の規格であり，AES 暗号に対応している。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "様々なシステムの動作ログを一元的に蓄積，管理し，セキュリティ上の脅威となる事象をいち早く検知，分析する。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "ファイアウォール機能を有し，マルウェア対策機能，侵入検知機能などの複数のセキュリティ機能を連携させ，統合的に管理する。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "WAFはWebアプリケーションへのHTTP通信を監視し、攻撃パターンを検知して不正アクセスを遮断します。",
+      "choiceExplanations": {
+        "a": "Webアプリケーションへの通信を検査して攻撃を遮断するWAFの説明です。",
+        "b": "AESに対応した無線LANセキュリティ規格はWPA2などです。",
+        "c": "ログを集約・相関分析するSIEMの説明です。",
+        "d": "複数のセキュリティ機能を統合するUTMの説明です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問10／「解答例」問10",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 10
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-11",
+      "subject": "A",
+      "field": "データベース",
+      "topic": "E-Rモデル",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "E-Rモデルにおけるエンティティの特徴はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "エンティティとインスタンスとは，1対1の対応関係をとる。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "エンティティとなり得るものは，物的に実現するものである。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "エンティティは，特性を表すための属性（アトリビュート）をもつ。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "異なった種類のエンティティ間の関係は，主として状態遷移として表現される。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "エンティティは管理対象となる人・物・事象などを表し、その性質を属性で表現します。",
+      "choiceExplanations": {
+        "a": "1つのエンティティ型には複数のインスタンス（実体）が存在し得るため、1対1とは限りません。",
+        "b": "取引や出来事など、物理的な実体をもたない概念もエンティティとして扱えます。",
+        "c": "属性はエンティティの特性を表します。",
+        "d": "エンティティ間の関連は関係（リレーションシップ）で表し、状態遷移が主な表現ではありません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問11／「解答例」問11",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "データベース"
+      ],
+      "extensions": {
+        "sourceQuestion": 11
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-12",
+      "subject": "A",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "オブジェクト指向と多相性",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "オブジェクト指向プログラミングの特徴のうち，異なるクラスのオブジェクトを同一のインタフェースで操作したときに，操作対象クラスに応じた異なる動作を可能にすることを何と呼ぶか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "委譲"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "継承"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "コンポジション"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "多相性"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "多相性（ポリモーフィズム）は、同じ操作を異なるクラスのオブジェクトに適用したとき、各クラスに応じた処理を実行できる性質です。",
+      "choiceExplanations": {
+        "a": "委譲は処理を別のオブジェクトに任せる設計方法です。",
+        "b": "継承は既存クラスの属性や操作を引き継いで新しいクラスを定義する仕組みです。",
+        "c": "コンポジションはオブジェクトを組み合わせて、全体と部分の関係を表す設計です。",
+        "d": "同じインタフェースに対してクラスごとに異なる実装を呼び分けられる性質が多相性です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問12／「解答例」問12",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 12
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-13",
+      "subject": "A",
+      "field": "プロジェクトマネジメント",
+      "topic": "スクラムの役割",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "アジャイル開発手法の一つであるスクラムにおいて，プロダクトバックログアイテムの内容や並び順を決定する役割をもつのは誰か。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "開発者"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "顧客"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "スクラムマスタ"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "プロダクトオーナ"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "プロダクトオーナはプロダクトの価値を最大化する責任をもち、プロダクトバックログの項目と順序を管理します。",
+      "choiceExplanations": {
+        "a": "開発者はスプリントで成果物を作成し、バックログ項目の実現方法を決めます。",
+        "b": "顧客は要望やフィードバックを提供できますが、バックログの優先順位を決める責任者ではありません。",
+        "c": "スクラムマスタはスクラムの理解・実践を支援し、チームの障害を取り除きます。",
+        "d": "プロダクトオーナがバックログ項目の内容を明確にし、順序を決定します。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問13／「解答例」問13",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "プロジェクトマネジメント"
+      ],
+      "extensions": {
+        "sourceQuestion": 13
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-14",
+      "subject": "A",
+      "field": "プロジェクトマネジメント",
+      "topic": "クリティカルパス",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "図は，あるプロジェクトの作業A～Iとその作業日数を表している。このプロジェクトの最短所要日数は何日か。"
+        },
+        {
+          "type": "image",
+          "src": "data/public/2025-r07-fe-a/q14-network.png",
+          "alt": "問14の作業ネットワーク図。作業AからI、日数、ダミー作業の凡例"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "27"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "28"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "29"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "31"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "作業ネットワークの最長経路を求めます。開始からA・B・G・Cの合流点までの所要時間は3+6+11=20日、Dに6日、Iに5日を加えて31日です。",
+      "choiceExplanations": {
+        "a": "ダミー作業も含めて各経路の所要時間を比べると、最長経路は31日です。",
+        "b": "合流点では各先行作業の完了を待つため、最長経路をたどると28日より長くなります。",
+        "c": "A・B・Gの経路にC以降を加えた最長経路は31日です。",
+        "d": "クリティカルパスはA(3)→B(6)→G(11)→ダミー→D(6)→I(5)で、合計31日です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問14／「解答例」問14",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "作業ネットワーク図を原資料から切り出して再配置。作業名・日数・ダミー作業の関係は原資料どおり。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "プロジェクトマネジメント"
+      ],
+      "extensions": {
+        "sourceQuestion": 14
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-15",
+      "subject": "A",
+      "field": "システム監査",
+      "topic": "物理的セキュリティ対策",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "サーバ室の物理的な安全対策の状況について，情報セキュリティ管理基準（平成28 年）に照らして，情報セキュリティ監査を行って判明した状況のうち，監査人が，指摘事項として監査報告書に記載すべきものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "サーバが設置されている施設の無人領域では，営業時間中でも，警報装置が作動するようになっている。"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "サーバ室に非常口，避難器具，誘導灯などを設置している。"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "社外からサーバ室へ直接出入りするドアを設置しているが，出入りを考慮して常時施錠していない。"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "場所が分からないように，サーバ室の所在を室外に表示していない。"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "explanation": "社外から直接出入りできるドアを常時施錠していないと、許可されていない者がサーバ室へ侵入できるおそれがあります。",
+      "choiceExplanations": {
+        "a": "無人領域で警報装置を作動させるのは、侵入を検知する対策です。",
+        "b": "非常口や避難器具、誘導灯の設置は安全確保の対策です。",
+        "c": "外部へ通じるドアを常時施錠しない状態は、物理的な入室制御が不十分です。",
+        "d": "サーバ室の所在を室外に表示しないことは、場所を特定されにくくする対策です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問15／「解答例」問15",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "システム監査"
+      ],
+      "extensions": {
+        "sourceQuestion": 15
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-16",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "マーケットバスケット分析",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "データマイニングの手法の一つであって，POS などの蓄積データから“一緒に買われる商品”の組合せを発見する分析手法はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "3C分析"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "ABC分析"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "コンジョイント分析"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "マーケットバスケット分析"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "マーケットバスケット分析は、購買データから同時に購入されやすい商品の組合せ（併売傾向）を見つけます。",
+      "choiceExplanations": {
+        "a": "3C分析は顧客・競合・自社の観点から事業環境を分析する手法です。",
+        "b": "ABC分析は重要度や売上などの基準で対象をA・B・Cのグループに分類する手法です。",
+        "c": "コンジョイント分析は、商品属性に対する選好や各属性の重視度を分析する手法です。",
+        "d": "POSなどの購買履歴から一緒に買われる商品の組合せを探す手法です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問16／「解答例」問16",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 16
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-17",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "生成AIのオプトアウト",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "インターネット上の生成 AI サービスを利用する際に，オプトアウトを設定することはどのような場合に有効か。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "個々の利用者が，自身が生成 AI から得た情報に対して，著作権を主張したい場合"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "個々の利用者が入力した情報を，生成AIの学習に利用させたくない場合"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "個々の利用者が入力した情報を，生成 AI を通じて，他の利用者にも知ってほしい場合"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "生成AIから得た情報の信ぴょう性を高めたい場合"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "オプトアウトを設定すると、入力した情報をサービスのモデル学習などに利用しないよう指定できます。",
+      "choiceExplanations": {
+        "a": "オプトアウトは、生成結果に対する著作権の主張を設定する機能ではありません。",
+        "b": "入力情報をモデルの学習に利用させたくない場合に、学習利用の対象から外す設定が有効です。",
+        "c": "他の利用者への共有を希望する設定ではなく、学習などへの利用を拒否する設定です。",
+        "d": "出力の信ぴょう性を保証・向上させる設定ではありません。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問17／「解答例」問17",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 17
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-18",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "ロングテール",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "物販事業において，ロングテールをビジネスとして成功させるために必要な施策はどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "多くの有名ブランド店が出店するショッピングモールの構築"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "交通の利便性が高い地域に対する，生活必需品を広く浅く取りそろえた出店計画"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "店舗で購入した商品を近隣地域に無償で配送するサービスの実施"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "豊富な品ぞろえと，在庫コストや配送費用を抑えるための大規模な物流センタの構築や活用"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "ロングテールは、多品種のうち個々の販売量は少ない商品を幅広く扱い、ネット販売や効率的な物流で販売機会を積み上げる考え方です。",
+      "choiceExplanations": {
+        "a": "有名ブランドの人気商品を集める施策で、販売量の少ない多品種を扱うロングテールとは異なります。",
+        "b": "生活必需品を実店舗で広く浅く扱う出店計画は、ロングテールを支える多品種販売・物流施策ではありません。",
+        "c": "近隣への配送サービスだけでは、幅広い商品群を効率よく扱う仕組みになりません。",
+        "d": "豊富な品ぞろえと物流コストの抑制により、販売量の少ない商品も含めた多品種販売を可能にします。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問18／「解答例」問18",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 18
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-19",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "損益分岐と目標利益",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "表の条件で喫茶店を開業したい。月10万円の利益を出すためには，1客席当たり1日平均何人の客が必要か。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "条件",
+            "値"
+          ],
+          "rows": [
+            [
+              "客1人当たりの売上高",
+              "500円"
+            ],
+            [
+              "客1人当たりの変動費",
+              "100円"
+            ],
+            [
+              "固定費",
+              "300,000円／月"
+            ],
+            [
+              "1か月の営業日数",
+              "20日"
+            ],
+            [
+              "客席数",
+              "10席"
+            ]
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "3.75"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "4.2"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "5"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "d"
+      ],
+      "explanation": "客1人当たりの限界利益は500−100=400円です。固定費30万円と目標利益10万円の計40万円を得るには、月に40万円÷400円=1,000人が必要です。10席×20日で200席・日なので、1席当たり1日5人です。",
+      "choiceExplanations": {
+        "a": "月に必要な客数は1,000人、席・日は200なので、1席当たり5人です。",
+        "b": "固定費だけを回収する客数ではなく、目標利益10万円も加えて計算します。",
+        "c": "限界利益400円を用いて固定費と目標利益を回収するため、必要人数は1,000人です。",
+        "d": "(固定費300,000円+目標利益100,000円)÷(売上500円−変動費100円)=1,000人。1,000÷(20日×10席)=5人です。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問19／「解答例」問19",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "喫茶店の条件表をHTML表として再配置。項目・数値は原資料どおり。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 19
+      }
+    },
+    {
+      "id": "ipa-r07-fe-a-20",
+      "subject": "A",
+      "field": "企業活動",
+      "topic": "カーボンフットプリント",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "カーボンフットプリントの説明として，適切なものはどれか。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "温室効果ガスの排出量から吸収量と除去量を差し引いた合計をゼロにする取組"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "原材料調達から廃棄・リサイクルに至るまでのライフサイクル全体を通して排出される温室効果ガスの排出量を，CO₂量に換算して，その値を商品やサービスに表示すること"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "自動車のエンジンから排出される一酸化炭素，窒素酸化物や炭化水素類などの大気汚染物質の排出量の定め"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "商品がどのような場所で作られて，流通し，販売されているかを把握するための仕組み"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "カーボンフットプリントは、製品・サービスのライフサイクル全体の温室効果ガス排出量をCO₂相当量に換算して示すものです。",
+      "choiceExplanations": {
+        "a": "排出量と吸収・除去量を差し引いて実質ゼロにする取組は、カーボンニュートラルの説明です。",
+        "b": "原材料調達から廃棄までの温室効果ガス排出量をCO₂相当量で表示するのがカーボンフットプリントです。",
+        "c": "一酸化炭素や窒素酸化物などの排出基準は大気汚染対策に関するものです。",
+        "d": "商品の生産・流通・販売経路を把握する仕組みはトレーサビリティです。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目A 公開問題」問20／「解答例」問20",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "企業活動"
+      ],
+      "extensions": {
+        "sourceQuestion": 20
+      }
+    }
+  ]
+}
