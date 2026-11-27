@@ -1,0 +1,811 @@
+{
+  "schemaVersion": 1,
+  "bankId": "ipa-r07-fe-subject-b",
+  "title": "令和7年度 基本情報技術者試験 科目B 公開問題",
+  "questions": [
+    {
+      "id": "ipa-r07-fe-b-01",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "4の倍数の個数",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問1　function1とfunction2が同じ値を返すよう、a,bに入れる組合せを選べ。n,mは正の整数でmはnより10以上大きい。"
+        },
+        {
+          "type": "code",
+          "text": "function1(n,m):\n count←0\n for(iをnからmまで1ずつ増やす)\n  if(i mod 4が0) count←count+1 endif\n endfor\n return count\nfunction2(n,m):\n count←0; tempN←n\n for(a)\n  if(tempN mod 4が0) 繰返し終了 endif\n  tempN←tempN+1\n endfor\n for(b) count←count+1 endfor\n return count"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から2まで増やす／jをnからmまでtempNずつ"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から2まで増やす／jをtempNからmまで1ずつ"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から2まで増やす／jをtempNからmまで4ずつ"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から3まで増やす／jをnからmまでtempNずつ"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から3まで増やす／jをtempNからmまで1ずつ"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "iを1から3まで増やす／jをtempNからmまで4ずつ"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "f"
+      ],
+      "explanation": "最初の4の倍数へ最大3回補正し、以降4ずつ増やします。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。",
+        "e": "正解の考え方と異なります。",
+        "f": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問1／「解答例」問1",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・プログラム・選択肢をUI向けに短縮・要約しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 1
+      }
+    },
+    {
+      "id": "ipa-r07-fe-b-02",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "硬貨の組合せ",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問2　1円玉、5円玉、10円玉でn円を作る組合せを数えるwhile条件を選べ。"
+        },
+        {
+          "type": "code",
+          "text": "count←0; rest←n\nwhile（［ ］）\n count←count+(rest÷5の商)+1\n rest←rest−10\nendwhile"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest≧0"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest≧5"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest≧10"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest＞0"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest＞5"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "rest＞10"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "explanation": "rest=0の場合も10円玉のみの組合せとして数えるので0以上です。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。",
+        "e": "正解の考え方と異なります。",
+        "f": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問2／「解答例」問2",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・プログラム・選択肢をUI向けに短縮・要約しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 2
+      }
+    },
+    {
+      "id": "ipa-r07-fe-b-03",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "スタック",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問3　pushは格納、popは取出しを行う。stackPosは次の格納位置。a,bを選べ。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "要素番号",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "rows": [
+            [
+              "stack",
+              "4",
+              "3",
+              "未定義",
+              "未定義"
+            ],
+            [
+              "stackPos",
+              "",
+              "↑",
+              "",
+              ""
+            ]
+          ],
+          "caption": "初期状態"
+        },
+        {
+          "type": "code",
+          "text": "stackPos←3; stack←{4,3,未定義,未定義}\npush: stack[a]←inputData; stackPos←stackPos+1\npop: stackPos←b; popData←stack[stackPos]"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=stackPos,b=stackPos+1"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=stackPos,b=stackPos−1"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=stackPos−1,b=stackPos+1"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "a=stackPos−1,b=stackPos−1"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "explanation": "格納はstackPos位置、取出しは一つ戻した位置。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問3／「解答例」問3",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・プログラム・選択肢をUI向けに短縮・要約し、初期状態図をHTML表に再構成しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 3
+      }
+    },
+    {
+      "id": "ipa-r07-fe-b-04",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "部分列検索",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問4　search({\"a\",\"b\",\"a\",\"b\",\"c\",\"a\",\"b\",\"c\"},{\"a\",\"b\",\"c\"})のβ条件が真となる回数。"
+        },
+        {
+          "type": "code",
+          "text": "for i=1..lenData−lenKey+1\n for j=1..lenKey // α\n  if data[i+j−1]=key[j] /** β **/\n   if j=lenKey: result末尾にiを追加\n  else: αの繰返し終了"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "2"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "5"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "6"
+            }
+          ]
+        },
+        {
+          "id": "g",
+          "label": "キ",
+          "content": [
+            {
+              "type": "text",
+              "text": "7"
+            }
+          ]
+        },
+        {
+          "id": "h",
+          "label": "ク",
+          "content": [
+            {
+              "type": "text",
+              "text": "8"
+            }
+          ]
+        },
+        {
+          "id": "i",
+          "label": "ケ",
+          "content": [
+            {
+              "type": "text",
+              "text": "9"
+            }
+          ]
+        },
+        {
+          "id": "j",
+          "label": "コ",
+          "content": [
+            {
+              "type": "text",
+              "text": "0"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "h"
+      ],
+      "explanation": "一致比較数は開始位置ごとに2,0,3,0,0,3で合計8回。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。",
+        "e": "正解の考え方と異なります。",
+        "f": "正解の考え方と異なります。",
+        "g": "正解の考え方と異なります。",
+        "h": "正解の考え方と異なります。",
+        "i": "正解の考え方と異なります。",
+        "j": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問4／「解答例」問4",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・プログラム・選択肢をUI向けに短縮・要約しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 4
+      }
+    },
+    {
+      "id": "ipa-r07-fe-b-05",
+      "subject": "B",
+      "field": "アルゴリズムとプログラミング",
+      "topic": "理論度数",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問5　理論度数表のa,bを選べ。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "非罹患",
+            "罹患"
+          ],
+          "rows": [
+            [
+              "接種",
+              "82",
+              "6"
+            ],
+            [
+              "未接種",
+              "58",
+              "8"
+            ]
+          ],
+          "caption": "集計結果（人）"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "",
+            "非罹患",
+            "罹患"
+          ],
+          "rows": [
+            [
+              "接種",
+              "a",
+              ""
+            ],
+            [
+              "未接種",
+              "",
+              "b"
+            ]
+          ],
+          "caption": "理論度数"
+        },
+        {
+          "type": "code",
+          "text": "result[r,c]←(行rの和)×(列cの和)÷全体和"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "44／33"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "58／8"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "70／7"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "75／2"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "80／6"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "80／8"
+            }
+          ]
+        },
+        {
+          "id": "g",
+          "label": "キ",
+          "content": [
+            {
+              "type": "text",
+              "text": "82／6"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "e"
+      ],
+      "explanation": "全体154、行合計88・66、列合計140・14よりa=80,b=6。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。",
+        "e": "正解の考え方と異なります。",
+        "f": "正解の考え方と異なります。",
+        "g": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問5／「解答例」問5",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・プログラム・選択肢をUI向けに短縮・要約し、表をHTML表として再構成しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "アルゴリズムとプログラミング"
+      ],
+      "extensions": {
+        "sourceQuestion": 5
+      }
+    },
+    {
+      "id": "ipa-r07-fe-b-06",
+      "subject": "B",
+      "field": "情報セキュリティ",
+      "topic": "ICT継続とバックアップ",
+      "difficulty": 2,
+      "format": "single",
+      "prompt": [
+        {
+          "type": "text",
+          "text": "問6　ファイルサーバは土曜にフル、翌週火・木曜に増分バックアップ。フル復元4時間、増分0.25時間。RPO72時間。金曜正午の障害時に必要な復元時点a1、木曜正午の全消失時の復元時間a2、ICT継続計画書の承認者a3の組合せを選べ。"
+        },
+        {
+          "type": "text",
+          "text": "テープは月・火・木曜に交換して耐火金庫保管、1か月分を世代管理する。JIS Q 27001:2023の「事業継続のためのICTの備え」に関する問い。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "項番",
+            "回答"
+          ],
+          "rows": [
+            [
+              "1",
+              "復元時点 a1"
+            ],
+            [
+              "2",
+              "復元時間 a2"
+            ],
+            [
+              "3",
+              "承認者 a3"
+            ]
+          ],
+          "caption": "監査回答"
+        }
+      ],
+      "choices": [
+        {
+          "id": "a",
+          "label": "ア",
+          "content": [
+            {
+              "type": "text",
+              "text": "月曜正午／4.25／CISO"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "label": "イ",
+          "content": [
+            {
+              "type": "text",
+              "text": "月曜正午／4.25／情報システム部担当者"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "label": "ウ",
+          "content": [
+            {
+              "type": "text",
+              "text": "月曜正午／4.25／内部監査室長"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "label": "エ",
+          "content": [
+            {
+              "type": "text",
+              "text": "月曜正午／4.50／CISO"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "label": "オ",
+          "content": [
+            {
+              "type": "text",
+              "text": "月曜正午／4.50／情報システム部担当者"
+            }
+          ]
+        },
+        {
+          "id": "f",
+          "label": "カ",
+          "content": [
+            {
+              "type": "text",
+              "text": "火曜正午／4.25／情報システム部担当者"
+            }
+          ]
+        },
+        {
+          "id": "g",
+          "label": "キ",
+          "content": [
+            {
+              "type": "text",
+              "text": "火曜正午／4.25／内部監査室長"
+            }
+          ]
+        },
+        {
+          "id": "h",
+          "label": "ク",
+          "content": [
+            {
+              "type": "text",
+              "text": "火曜正午／4.50／CISO"
+            }
+          ]
+        },
+        {
+          "id": "i",
+          "label": "ケ",
+          "content": [
+            {
+              "type": "text",
+              "text": "火曜正午／4.50／情報システム部担当者"
+            }
+          ]
+        },
+        {
+          "id": "j",
+          "label": "コ",
+          "content": [
+            {
+              "type": "text",
+              "text": "火曜正午／4.50／内部監査室長"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        "h"
+      ],
+      "explanation": "RPO72時間で火曜正午までが必要。復元はフル+増分2回で4.50時間、承認者はCISO。",
+      "choiceExplanations": {
+        "a": "正解の考え方と異なります。",
+        "b": "正解の考え方と異なります。",
+        "c": "正解の考え方と異なります。",
+        "d": "正解の考え方と異なります。",
+        "e": "正解の考え方と異なります。",
+        "f": "正解の考え方と異なります。",
+        "g": "正解の考え方と異なります。",
+        "h": "正解の考え方と異なります。",
+        "i": "正解の考え方と異なります。",
+        "j": "正解の考え方と異なります。"
+      },
+      "source": {
+        "type": "official",
+        "label": "出典：IPA「令和7年度 基本情報技術者試験 科目B 公開問題」問6／「解答例」問6",
+        "answerSource": "IPA 公開解答例",
+        "explanationSource": "FE Study作成",
+        "modificationNote": "設問文・選択肢をUI向けに短縮・要約し、図表を文章とHTML表に再構成しています。原文ではありません。"
+      },
+      "examYear": "令和7年度",
+      "syllabus": [
+        "情報セキュリティ"
+      ],
+      "extensions": {
+        "sourceQuestion": 6
+      }
+    }
+  ]
+}
