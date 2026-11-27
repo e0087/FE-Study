@@ -447,8 +447,7 @@
               "alt": "選択肢 ア のタイミングチャート"
             }
           ],
-          "label": "ア",
-          "labelInContent": true
+          "label": "ア"
         },
         {
           "id": "b",
@@ -459,8 +458,7 @@
               "alt": "選択肢 イ のタイミングチャート"
             }
           ],
-          "label": "イ",
-          "labelInContent": true
+          "label": "イ"
         },
         {
           "id": "c",
@@ -471,8 +469,7 @@
               "alt": "選択肢 ウ のタイミングチャート"
             }
           ],
-          "label": "ウ",
-          "labelInContent": true
+          "label": "ウ"
         },
         {
           "id": "d",
@@ -483,8 +480,7 @@
               "alt": "選択肢 エ のタイミングチャート"
             }
           ],
-          "label": "エ",
-          "labelInContent": true
+          "label": "エ"
         }
       ],
       "answer": [
@@ -501,7 +497,8 @@
         "type": "official",
         "label": "出典：IPA「令和8年度 基本情報技術者試験 科目A 公開問題」問6／「解答例」問6",
         "answerSource": "IPA 公開解答例",
-        "explanationSource": "FE Study作成"
+        "explanationSource": "FE Study作成",
+        "modificationNote": "タイミングチャート画像に原資料で印字された選択肢記号を除き、表示順に合わせて記号を付け直しています。波形と回路図は原資料どおり。"
       },
       "examYear": "令和8年度",
       "syllabus": [
