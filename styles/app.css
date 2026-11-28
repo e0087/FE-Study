@@ -16,4 +16,4 @@
 
 
 
-.question-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}.question-footer>small{display:block;font-size:9px;color:#9aa49f}.question-tools{display:flex;align-items:center;justify-content:flex-end;flex:0 0 auto;margin-left:auto}.note-toggle{width:32px;height:32px;min-width:32px;min-height:32px;padding:0;display:grid;place-items:center}.note-icon{display:block;width:18px;height:18px;transform: scaleX(-1)}
+.question-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}.question-footer>small{display:block;font-size:9px;color:#9aa49f}.question-tools{display:flex;align-items:center;justify-content:flex-end;flex:0 0 auto;margin-left:auto}.note-toggle{width:32px;height:32px;min-width:32px;min-height:32px;padding:0;display:grid;place-items:center}.note-icon{display:block;width:18px;height:18px}
