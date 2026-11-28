@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'fe-study-shell-';
-const CACHE_VERSION = 'v10';
+const CACHE_VERSION = 'v11';
 const CACHE_NAME = `${CACHE_PREFIX}${CACHE_VERSION}`;
 const APP_FILES = [
   './',
